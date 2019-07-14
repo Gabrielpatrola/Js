@@ -7,18 +7,55 @@
     <body>
 
         <script>
-            function retornaSexo(sexo) {
-                //M masculino, F feminino
+            //exercicio 01
+            var endereco = {
+                rua: "Rua dos pinheiros",
+                numero: 1293,
+                bairro: "Centro",
+                cidade: "São Paulo",
+                uf: "SP"
+            };
 
-                if (sexo === 'M') {
-                    return 'masculino';
-                }
-                else {
-                    return 'feminino'
-                }
+            console.log("o usuario mora em", endereco['cidade'], '/', endereco['uf'], "no bairro", endereco['bairro'], "na rua", endereco["rua"], "com nº", endereco["numero"]);
+            console.log(endereco.join());
+            //exercicio 02
+            function pares(x, y) {
+                // código aqui
             }
-            var resultado = retornaSexo('M');
-            console.log(resultado);
+            pares(32, 321);
+
+            //exercico 03
+            function temHabilidade(skills) {
+                // código aqui
+            }
+            var skills = ["Javascript", "ReactJS", "React Native"];
+            temHabilidade(skills); // true ou false
+
+            //exercicio 04
+            function experiencia(anos) {
+                // código aqui
+            }
+            var anosEstudo = 7;
+            experiencia(anosEstudo);
+            // De 0-1 ano: Iniciante
+            // De 1-3 anos: Intermediário
+            // De 3-6 anos: Avançado
+            // De 7 acima: Jedi Master
+
+
+            //exercicio 05
+            var usuarios = [
+                {
+                    nome: "Diego",
+                    habilidades: ["Javascript", "ReactJS", "Redux"]
+                },
+                {
+                    nome: "Gabriel",
+                    habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
+                }
+            ];
+
+
         </script>
 
     </body>
