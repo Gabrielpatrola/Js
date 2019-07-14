@@ -19,10 +19,12 @@
             //Retorne o seguinte conteúdo:
             //O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" com
             //nº 1293.
-
+            console.log("Exercicio 01 --- Inicio");
             console.log("o usuario mora em", endereco['cidade'],'/',endereco['uf'], "no bairro", endereco['bairro'], "na rua", '"',endereco["rua"],'"',"com nº", endereco["numero"]);
+            console.log("Exercicio 01 --- Fim");
             //exercicio 02
             //Crie uma função que dado um intervalo (entre x e y) exiba todos número pares
+            console.log("Exercicio 02 --- Inicio");
             function pares(x, y) {
                 for(i = x; i < y; i++){
                     if (i % 2 == 0){
@@ -31,7 +33,8 @@
                 }
             }
             pares(32, 321);
-
+            console.log("Exercicio 02 --- Fim");
+            console.log("Exercicio 03 --- Inicio");
             //exercico 03
             //Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"
             //e retorna um booleano true/false caso exista ou não
@@ -41,10 +44,29 @@
             var skills = ["Javascript", "ReactJS", "React Native"];
             temHabilidade(skills); // true ou false
 
+            console.log("Exercicio 03 --- Fim");
+            console.log("Exercicio 04 --- Inicio");
             //exercicio 04
             //Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é
             function experiencia(anos) {
-                // código aqui
+                switch (anos){
+                case 0:
+                case 1:
+                    console.log('Iniciante');
+                break;
+                case 2:
+                case 3:
+                    console.log('Intermediario');
+                break;
+                case 4:
+                case 5:
+                case 6:
+                    console.log('Avançado');
+                break;
+                default:
+                    console.log('Jedi master');
+                }
+                
             }
             var anosEstudo = 7;
             experiencia(anosEstudo);
@@ -52,7 +74,7 @@
             // De 1-3 anos: Intermediário
             // De 3-6 anos: Avançado
             // De 7 acima: Jedi Master
-
+            console.log("Exercicio 04 --- Fim");
 
             //exercicio 05]
             //Dado o seguinte vetor de objetos:
