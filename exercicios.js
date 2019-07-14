@@ -1,6 +1,9 @@
 
 //exercicio 01
-//Crie uma função que dado o objeto a seguir:
+//Crie uma função que dado o objeto
+//Retorne o seguinte conteúdo:
+//O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" com
+//nº 1293.
 console.log("Exercicio 01 --- Inicio");
 function exibeMensagem(endereco) {
     return (
@@ -24,11 +27,10 @@ var endereco = {
     cidade: "São Paulo",
     uf: "SP"
 };
-//Retorne o seguinte conteúdo:
-//O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" com
-//nº 1293.            
+
 console.log(exibeMensagem(endereco));
 console.log("Exercicio 01 --- Fim");
+
 //exercicio 02
 //Crie uma função que dado um intervalo (entre x e y) exiba todos número pares
 console.log("Exercicio 02 --- Inicio");
@@ -42,7 +44,8 @@ function pares(x, y) {
 pares(32, 321);
 console.log("Exercicio 02 --- Fim");
 console.log("Exercicio 03 --- Inicio");
-//exercico 03
+
+//exercicio 03
 //Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"
 //e retorna um booleano true/false caso exista ou não
 function temHabilidade(skills) {
@@ -53,6 +56,7 @@ console.log(temHabilidade(skills));
 
 console.log("Exercicio 03 --- Fim");
 console.log("Exercicio 04 --- Inicio");
+
 //exercicio 04
 //Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é
 function experiencia(anos) {
@@ -75,8 +79,12 @@ console.log(experiencia(anosEstudo));
 // De 7 acima: Jedi Master
 console.log("Exercicio 04 --- Fim");
 
-//exercicio 05]
-//Dado o seguinte vetor de objetos:
+//exercicio 05
+//Dado o seguinte vetor de objetos
+//Escreva uma função que produza o seguinte resultado:
+//O Diego possui as habilidades: Javascript, ReactJS, Redux
+//O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
+
 console.log("Exericio 05 --- Inicio");
 function exibeHabilidades(usuarios) {
     for (usuario of usuarios) {
@@ -98,9 +106,6 @@ var usuarios = [
         habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
     }
 ];
-//Escreva uma função que produza o seguinte resultado:
-//O Diego possui as habilidades: Javascript, ReactJS, Redux
-//O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
 
 exibeHabilidades(usuarios);
 console.log("Exercicio 05 --- Fim");
