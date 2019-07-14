@@ -8,6 +8,7 @@
 
         <script>
             //exercicio 01
+            //Crie uma função que dado o objeto a seguir:
             var endereco = {
                 rua: "Rua dos pinheiros",
                 numero: 1293,
@@ -15,9 +16,13 @@
                 cidade: "São Paulo",
                 uf: "SP"
             };
+            //Retorne o seguinte conteúdo:
+            //O usuário mora em São Paulo / SP, no bairro Centro, na rua "Rua dos Pinheiros" com
+            //nº 1293.
 
-            console.log("o usuario mora em", endereco['cidade'],'/',endereco['uf'], "no bairro", endereco['bairro'], "na rua", endereco["rua"], "com nº", endereco["numero"]);
+            console.log("o usuario mora em", endereco['cidade'],'/',endereco['uf'], "no bairro", endereco['bairro'], "na rua", '"',endereco["rua"],'"',"com nº", endereco["numero"]);
             //exercicio 02
+            //Crie uma função que dado um intervalo (entre x e y) exiba todos número pares
             function pares(x, y) {
                 for(i = x; i < y; i++){
                     if (i % 2 == 0){
@@ -28,6 +33,8 @@
             pares(32, 321);
 
             //exercico 03
+            //Escreva uma função que verifique se o vetor de habilidades passado possui a habilidade "Javascript"
+            //e retorna um booleano true/false caso exista ou não
             function temHabilidade(skills) {
                 // código aqui
             }
@@ -35,6 +42,7 @@
             temHabilidade(skills); // true ou false
 
             //exercicio 04
+            //Escreva uma função que dado um total de anos de estudo retorna o quão experiente o usuário é
             function experiencia(anos) {
                 // código aqui
             }
@@ -46,7 +54,8 @@
             // De 7 acima: Jedi Master
 
 
-            //exercicio 05
+            //exercicio 05]
+            //Dado o seguinte vetor de objetos:
             var usuarios = [
                 {
                     nome: "Diego",
@@ -57,6 +66,9 @@
                     habilidades: ["VueJS", "Ruby on Rails", "Elixir"]
                 }
             ];
+            //Escreva uma função que produza o seguinte resultado:
+            //O Diego possui as habilidades: Javascript, ReactJS, Redux
+            //O Gabriel possui as habilidades: VueJS, Ruby on Rails, Elixir
 
 
         </script>
